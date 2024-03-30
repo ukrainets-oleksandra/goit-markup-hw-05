@@ -424,7 +424,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="subscribe" type="button">
+            <button class="subscribe" type="submit">
               Subscribe
               <svg class="footer-form-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -436,13 +436,14 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
-        <button class="modal-button">
+        <button class="modal-button" type="button">
           <svg class="modal-icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <label for="user-name" class="modal-label">Name</label>
+        <form class="form-modal"></form>
         <div class="modal-input-wrap">
           <input
             type="text"
@@ -489,7 +490,7 @@
           <textarea
             name="user-comment"
             class="modal-input modal-input-comment"
-            id="user-email"
+            id="user-comment"
             placeholder="Text input"
           ></textarea>
         </div>
@@ -512,6 +513,7 @@
             <a href="" class="check-link">Privacy Policy</a></label
           >
         </div>
+        </form>
       </div>
     </div>
   </body>
